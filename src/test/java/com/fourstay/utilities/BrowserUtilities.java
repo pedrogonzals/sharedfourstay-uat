@@ -8,7 +8,7 @@ public class BrowserUtilities {
 
 	public static void waitForPageLoad() {
 		WebDriverWait wait = new WebDriverWait(Driver.getInstance(), 30);
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.se-pre-con")));
+//		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.se-pre-con")));
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -30,11 +30,11 @@ public class Driver {
 			case "safari":
 				driver = new SafariDriver();
 				break;
-			case "phantomjs":
-				System.setProperty("webdriver.phantomjs.driver",
-						ConfigurationReader.getProperty("phantomjs.driver.path"));
-				driver = new PhantomJSDriver();
-				break;
+//			case "phantomjs":
+//				System.setProperty("webdriver.phantomjs.driver",
+//						ConfigurationReader.getProperty("phantomjs.driver.path"));
+//				driver = new PhantomJSDriver();
+//				break;
 			default:
 				System.setProperty("webdriver.chrome.driver", ConfigurationReader.getProperty("chrome.driver.path"));
 				driver = new ChromeDriver();
